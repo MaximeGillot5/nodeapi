@@ -18,6 +18,8 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use("/post", require("./routes/post.routes"))
 
+app.use("/user", require("./routes/user.routes"))
+
 
 //Lancer le serveur
 app.listen(port, () => console.log("Le serveur a démarré au port  " + port))
